@@ -10,51 +10,76 @@
   box-sizing: border-box;
 }
 
-.hidden {
-  display: none;
-}
-
-button, li {
-  width: 250px;
-  font-family: sans-serif;
-  font-size: 1rem;
-  padding: 5px 5px 5px 25px;
-  border: 1px solid black;
-  border-radius: 8px;
-  text-align: left;
-}
-
-ul {
-  margin-top: 5px;
-  position: absolute;
-  background-color: white;
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Oxygen,
+    Ubuntu,
+    Cantarell,
+    "Open Sans",
+    "Helvetica Neue",
+    sans-serif;
+  height: 90vh;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  align-items: center;
+  justify-content: center;
 }
 
-.img1 {
-  background-color: violet;
+
+h1,
+form {
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
+  padding: 25px;
+  border: solid 2px black;
+  border-radius: 32px;
+  align-items: flex-end;
+  background-color: rgb(230, 230, 230);
 }
 
-.img2 {
-  background-color: red;
+
+h1 {
+  padding: 15px 45px 15px 45px;
+  margin: 20px;
 }
 
-.img3 {
-  background-color: green;
+button {
+  align-self: center;
 }
 
-.img4 {
-  background-color: yellow;
+.error,
+input,
+button {
+  border: 1px dashed grey;
+  padding: 5px 15px 5px 15px;
+  border-radius: 32px;
 }
 
-.img5 {
-  background-color: blue;
+.error {
+  border-width: 0px;
+  box-shadow: 0px 0px 5px red;
 }
 
-.caraousel {
-  width: 500px;
-  height: 200px;
+button {
+  padding: 10px 25px 10px 25px;
+  border: solid black 2px;
+  transition: background-color 0.3s;
 }
 
+button:hover {
+  cursor: pointer;
+  transition: background-color 0.3s;
+  background-color: rgb(238, 238, 238);
+}
+
+input:focus {
+  background-color: rgb(245, 245, 245);
+  outline: none;
+  border: dashed red 2px;
+}

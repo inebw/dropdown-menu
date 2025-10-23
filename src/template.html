@@ -6,23 +6,55 @@
     <title>dropdown-menu</title>
   </head>
   <body>
-    <h1>Hello! World</h1>
-    <div class="dropdown-menu">
-      <button class="dropdown-button">Dropdown title</button>
-      <ul class="hidden">
-        <li>this is list no:1</li>
-        <li>this is list no:2</li>
-        <li>this is list no:3</li>
-        <li>this is list no:4</li>
-        <li>this is list no:5</li>
-      </ul>
-    </div>
-
-    <div class="caraousel sec01">
-
-    </div>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui officiis dolor iure aliquam quaerat corporis, minus id quis architecto, quidem amet voluptas sed sequi ducimus eum facere, nulla unde rerum?</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui officiis dolor iure aliquam quaerat corporis, minus id quis architecto, quidem amet voluptas sed sequi ducimus eum facere, nulla unde rerum?</p>
-
+    <h1>a form like no other</h1>
+    <form action="#" novalidate>
+      <div class="email-box">
+        <lable for="email">Email:</lable>
+        <input type="email" id="email" name="email" required />
+      </div>
+      <span class="email-error"></span>
+      <div class="country-box">
+        <label for="country">Country: </label>
+        <input type="text" id="country" name="country" minlength="4" required />
+      </div>
+      <span class="country-error"></span>
+      <div class="postal-box">
+        <label for="postal">Postal Code: </label>
+        <input
+          type="tel"
+          id="postal"
+          name="postal"
+          minlength="6"
+          maxlength="6"
+          required
+        />
+      </div>
+      <span class="postal-error"></span>
+      <div class="password-box">
+        <label for="password">Password: </label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          minlength="8"
+          maxlength="32"
+          required
+        />
+      </div>
+      <span class="password-error"></span>
+      <div class="confirm-password-box">
+        <label for="confirm-password">Confirm Password:</label>
+        <input
+          type="password"
+          id="confirm-password"
+          name="confirm-password"
+          minlength="8"
+          maxlength="32"
+          required
+        />
+      </div>
+      <span class="confirm-password-error"></span>
+      <button type="submit" class="submit">Submit</button>
+    </form>
   </body>
 </html>
