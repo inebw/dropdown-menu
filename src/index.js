@@ -1,12 +1,12 @@
 import "./styles.css";
 import loadingImage from "./loading.gif";
-import whatYouNeed from "./whatyouneed.gif"
+import whatYouNeed from "./whatyouneed.gif";
 
 const img = document.querySelector("img");
 const shibaButton = document.querySelector(".shiba");
 const searchButton = document.querySelector(".search");
 const searchInput = document.getElementById("search");
-const form = document.querySelector('form');
+const form = document.querySelector("form");
 
 img.src = whatYouNeed;
 
@@ -38,7 +38,7 @@ searchButton.addEventListener("click", () => {
   addImage(searchInput.value);
 });
 
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
   addImage(searchInput.value);
-})
+});
